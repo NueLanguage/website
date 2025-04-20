@@ -1,0 +1,73 @@
+/* a monokai pirokai inspired theme for nue! */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: var(--mono-fg);
+  background: var(--mono-bg);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  text-shadow: none;
+  direction: ltr;
+  text-align: left;
+  word-spacing: normal;
+  white-space: pre;
+  word-break: normal;
+  word-wrap: normal;
+  tab-size: 2;
+  hyphens: none;
+  border-radius: 0.5rem;
+}
+
+:root {
+  --mono-bg: #1e1e24;
+  --mono-fg: #f8f8f2;
+  --mono-comment: #6e6a86;
+  --mono-function: #a6e22e;
+  --mono-type: #66d9ef;
+  --mono-string: #ffe792;
+  --mono-number: #ae81ff;
+  --mono-operator: #f92672;
+  --mono-keyword: #ff6188;
+  --mono-punctuation: #f968c6;
+}
+
+.token.comment {
+  color: var(--mono-comment);
+  font-style: italic;
+}
+
+.token.keyword {
+  color: var(--mono-keyword);
+}
+
+.token.string {
+  color: var(--mono-string);
+}
+
+.token.number {
+  color: var(--mono-number);
+}
+
+.token.boolean {
+  color: var(--mono-number);
+}
+
+.token.operator {
+  color: var(--mono-operator);
+}
+
+.token.function {
+  color: var(--mono-function);
+}
+
+.token.type {
+  color: var(--mono-type);
+}
+
+.token.punctuation {
+  color: var(--mono-punctuation);
+}
+
+.token.identifier {
+  color: var(--mono-fg);
+}

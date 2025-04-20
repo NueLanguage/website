@@ -1,0 +1,60 @@
+.tab-button {
+  background-color: #2d2d2d;
+  border-radius: 0.375rem 0.375rem 0 0;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tab-button.active {
+  background-color: #1e1e1e;
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.tab-button:hover {
+  background-color: #3a3a3a;
+}
+
+:root {
+  --accent: #f29f80;
+  --muted: #a87c6f;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+pre,
+code {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.tab-button {
+  @apply px-4 py-2 rounded-t-md bg-[#2d2d2d] text-white border-b-2 border-transparent;
+}
+
+.tab-button.active {
+  @apply border-[var(--accent)] text-[var(--accent)] font-bold;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.glow-card {
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px rgba(255, 200, 150, 0.1);
+  will-change: transform;
+}
+
+.glow-card:hover {
+  box-shadow: 0 0 15px rgba(255, 200, 150, 0.4);
+}

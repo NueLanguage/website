@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Nue - Simplicity without compromise. Coming September.</title>
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- general meta -->
+    <meta name="title" content="Nue - Simplicity without compromise. Coming September." />
+    <meta name="description"
+        content="Nue is a fast, coherent scripting language written in C. Designed for clarity, performance, and elegance." />
+    <meta name="theme-color" content="#FF8D7B" />
+    <meta name="keywords"
+        content="Nue, Nue language, programming language, scripting language, modern language, Richard Ziupsnys, Numelon, interpreter, language design, VSCode extension, scripting, custom language, C-based language, syntax highlighting, experimental language, lexer, parser, simple programming language, custom compiler, toy language, future of programming, fast language, type-safe language, Lua-inspired, expressive language, beginner friendly, advanced scripting, modern syntax, match statement, alias, variadic functions, soft typing, custom types, code aesthetics, Numelon Ltd" />
+
+    <!-- opengraph meta -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nue-lang.org/" />
+    <meta property="og:title" content="Nue - Simplicity without compromise. Coming September." />
+    <meta property="og:description"
+        content="Nue is a fast, coherent scripting language written in C. Designed for clarity, performance, and elegance." />
+    <meta property="og:image" content="https://raw.githubusercontent.com/nue-lang/logo/main/exported/banner.png" />
+
+    <!-- twitter meta -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://nue-lang.org/" />
+    <meta name="twitter:title" content="Nue - Simplicity without compromise. Coming September." />
+    <meta name="twitter:description"
+        content="Nue is a fast, coherent scripting language written in C. Designed for clarity, performance, and elegance." />
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/nue-lang/logo/main/exported/banner.png" />
+
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Nunito+Sans:wght@400;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- bloated tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" />
+    <!-- custom prism style for nue -->
+    <link rel="stylesheet" href="prism-styles-nue.css" />
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+    <!-- custom prism syntax declaration for nue -->
+    <script src="prism-nue.js"></script>
+
+    <link rel="stylesheet" href="tailwind.css" />
+</head>
+
+<body class="bg-[#1a1a1a] text-[#fce1d2]">
+    <header class="text-center py-20 bg-gradient-to-br from-[#2a2a2a] to-[#1a1a1a]">
+        <img src="https://raw.githubusercontent.com/NueLanguage/logo/refs/heads/main/exported/logo.png" alt="Nue Logo"
+            class="w-24 h-24 mx-auto mb-4" />
+        <h1 class="text-6xl font-bold text-[var(--accent)]">Nue</h1>
+        <p class="mt-4 text-xl text-[var(--muted)]">
+            A fast and coherent scripting language without compromise 🌸
+        </p>
+        <div class="mt-6 space-x-4">
+            <a href="#about"
+                class="inline-block px-6 py-2 border border-[var(--accent)] rounded hover:bg-[var(--accent)] hover:text-[#1a1a1a] transition"><i
+                    class="fas fa-circle-info mr-2"></i>Learn More</a>
+            <a href="https://github.com/NueLanguage/nue" target="_blank"
+                class="inline-block px-6 py-2 border border-[var(--accent)] rounded hover:bg-[var(--accent)] hover:text-[#1a1a1a] transition"><i
+                    class="fab fa-github mr-2"></i>GitHub</a>
+            <a href="#feature-request"
+                class="inline-block px-6 py-2 border border-[var(--accent)] rounded hover:bg-[var(--accent)] hover:text-[#1a1a1a] transition"><i
+                    class="fas fa-lightbulb mr-2"></i>Feature Request</a>
+            <a href="https://discord.gg/VHDnSxgkGa" target="_blank"
+                class="inline-block px-6 py-2 bg-blue-500 text-white rounded hover:opacity-90 transition"><i
+                    class="fab fa-discord mr-2"></i>Discord</a>
+        </div>
+    </header>
+
+    <section id="about" class="max-w-5xl mx-auto px-6 py-16">
+        <h2 class="text-3xl text-[var(--accent)] font-bold mb-10 text-center">
+            What is Nue?
+        </h2>
+        <div class="grid md:grid-cols-2 gap-6" id="feature-cards">
+            <div class="bg-[#2a2a2a] rounded-lg p-6 shadow glow-card">
+                <h3 class="text-xl font-semibold text-[var(--accent)] mb-2">
+                    <i class="fas fa-feather mr-2"></i> Lightweight but Powerful
+                </h3>
+                <p>
+                    Nue is written entirely in C, prioritising performance and
+                    minimalism without sacrificing expressiveness or depth.
+                </p>
+            </div>
+            <div class="bg-[#2a2a2a] rounded-lg p-6 shadow glow-card">
+                <h3 class="text-xl font-semibold text-[var(--accent)] mb-2">
+                    <i class="fas fa-code-branch mr-2"></i> Typed Yet Flexible
+                </h3>
+                <p>
+                    Variables in Nue can be declared with multiple acceptable types,
+                    striking a balance between safety and versatility.
+                </p>
+            </div>
+            <div class="bg-[#2a2a2a] rounded-lg p-6 shadow glow-card">
+                <h3 class="text-xl font-semibold text-[var(--accent)] mb-2">
+                    <i class="fas fa-scroll mr-2"></i> Intuitive Syntax
+                </h3>
+                <p>
+                    From <code>match</code> constructs to Lua-style variadic handling,
+                    Nue is built for human comprehension, not compiler worship.
+                </p>
+            </div>
+            <div class="bg-[#2a2a2a] rounded-lg p-6 shadow glow-card">
+                <h3 class="text-xl font-semibold text-[var(--accent)] mb-2">
+                    <i class="fas fa-rocket mr-2"></i> Fast to Learn, Fun to Master
+                </h3>
+                <p>
+                    Nue is designed to be coherent, approachable, and epic. Whether
+                    you're writing scripts or crafting full programs - it just flows.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="examples" class="max-w-5xl mx-auto px-6 py-16">
+        <h2 class="text-3xl text-[var(--accent)] font-bold mb-6 text-center">
+            What does Nue look like?
+        </h2>
+
+        <!-- the tab buttons -->
+        <div class="flex flex-wrap justify-center gap-2 mb-4">
+            <button class="tab-button active" onclick="showTab('tab1', event)">
+                Hello World
+            </button>
+            <button class="tab-button" onclick="showTab('tab2', event)">
+                Multiple Types
+            </button>
+            <button class="tab-button" onclick="showTab('tab3', event)">
+                match
+            </button>
+            <button class="tab-button" onclick="showTab('tab4', event)">
+                Alias
+            </button>
+            <button class="tab-button" onclick="showTab('tab5', event)">
+                Custom Iterator
+            </button>
+        </div>
+
+        <!-- actual tab content itself, hidden until selected -->
+        <div id="tab1" class="tab-content active">
+            <pre class="rounded overflow-auto bg-[#2d2d2d] p-4 text-sm text-white"><code class="language-nue">// this one is quite obvious! :)
+print("Hello from Nue!")</code></pre>
+        </div>
+
+        <div id="tab2" class="tab-content">
+            <pre class="rounded overflow-auto bg-[#2d2d2d] p-4 text-sm text-white"><code class="language-nue">private var [string, number] myVar = "hello"
+myVar = 123
+print(myVar) //123
+myVar = {} // error: myVar only allows strings and numbers</code></pre>
+        </div>
+
+        <div id="tab3" class="tab-content">
+            <pre class="rounded overflow-auto bg-[#2d2d2d] p-4 text-sm text-white"><code class="language-nue">private var string input = {"yes", "no", "maybe"}[math.random(1, 3)]
+        
+match input {
+  case "yes" {
+    print("Confirmed!")
+  }
+  
+  case "no" {
+    print("Cancelled!")
+  }
+  
+  case {
+    print("Unknown response.")
+  }
+}</code></pre>
+        </div>
+
+        <div id="tab4" class="tab-content">
+            <pre
+                class="rounded overflow-auto bg-[#2d2d2d] p-4 text-sm text-white"><code class="language-nue">private var boolean enabled = true
+private alias mirror = enabled
+
+mirror = false
+
+print(mirror) // output: false, this is to be expected
+print(enabled) // output: false, this is because when we made an alias of 'enabled' (mirror), we effectively made them share the same memory</code></pre>
+        </div>
+
+        <div id="tab5" class="tab-content">
+            <pre class="rounded overflow-auto bg-[#2d2d2d] p-4 text-sm text-white"><code class="language-nue">private function customIterator(...) -> function {
+  private var table items = {...}
+  private var number i = 1
+  
+  return function() -> boolean, any? {
+    if i > #items { return false }
+    return true, items[i++]
+  }
+}
+
+for value in customIterator("a", 2, true) {
+  print(value)
+}</code></pre>
+        </div>
+    </section>
+
+    <section class="max-w-4xl mx-auto px-6 py-16">
+        <h2 class="text-3xl text-[var(--accent)] font-bold mb-6">
+            VSCode Extension
+        </h2>
+        <p class="mb-4">
+            Even in its early days, Nue already has an experimental VSCode extension
+            with syntax highlighting and more coming soon.
+        </p>
+        <img src="https://github.com/NueLanguage/vscode-extension/raw/main/README-assets/features.png"
+            alt="VSCode Extension Preview" class="rounded shadow mb-4" />
+        <div class="space-x-4 flex justify-center flex-wrap gap-4">
+            <a href="https://marketplace.visualstudio.com/items?itemName=NueLanguage.nue-vscode" target="_blank"
+                class="inline-block px-4 py-2 bg-[var(--accent)] text-[#1a1a1a] rounded hover:opacity-90 transition"><i
+                    class="fas fa-code mr-2"></i> VSCode Marketplace</a>
+            <a href="https://open-vsx.org/extension/NueLanguage/nue-vscode" target="_blank"
+                class="inline-block px-4 py-2 bg-[var(--accent)] text-[#1a1a1a] rounded hover:opacity-90 transition"><i
+                    class="fas fa-box-open mr-2"></i> Open VSX</a>
+            <a href="https://github.com/NueLanguage/vscode-extension" target="_blank"
+                class="inline-block px-4 py-2 bg-[var(--accent)] text-[#1a1a1a] rounded hover:opacity-90 transition"><i
+                    class="fab fa-github mr-2"></i> GitHub</a>
+        </div>
+    </section>
+
+    <section id="feature-request" class="max-w-4xl mx-auto px-6 py-16">
+        <h2 class="text-3xl text-[var(--accent)] font-bold mb-6">
+            Feature Requests
+        </h2>
+        <p>
+            See something missing from Nue or wish for a feature that no other
+            language has? Let Nue be your dream -
+            <strong>let's rewrite history together!</strong>
+        </p>
+        <a href="https://github.com/NueLanguage/nue/issues" target="_blank"
+            class="inline-block mt-4 px-6 py-2 bg-[var(--accent)] text-[#1a1a1a] rounded hover:opacity-90 transition"><i
+                class="fas fa-magic mr-2"></i>Request a Feature</a>
+    </section>
+
+    <section class="max-w-4xl mx-auto px-6 py-16">
+        <h2 class="text-3xl text-[var(--accent)] font-bold mb-6">Timeline</h2>
+        <p>
+            Major development efforts begin <strong>20 June 2025</strong>. Expect
+            significant advancements throughout July, with a polished milestone
+            expected by <strong>August-September 2025</strong>.
+        </p>
+    </section>
+
+    <footer class="text-center py-8 text-[var(--muted)] text-sm">
+        &copy; 2025 Nue. Crafted with care and peachy precision! 🍑
+        <br>
+        Nue is currently being made by <a href="https://richy.lol" style="text-decoration-line: underline;">Richard
+            Ziupsnys</a>, who also created this site.
+    </footer>
+
+    <script src="code-tabs.js"></script>
+    <script src="card-glow.js"></script>
+</body>
+
+</html>
